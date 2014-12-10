@@ -43,4 +43,7 @@ function DBExec($sql)
     }
 
  }
+function DbQueryOne($sql) {
+    return DbQuery($sql)[0];
+}
 

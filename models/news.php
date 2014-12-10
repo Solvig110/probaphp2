@@ -15,10 +15,11 @@ return
     DBExec("INSERT INTO `news` (`title`, `text`) VALUES ('$title', '$text')");
 }
 
-function One_article ()
+function One_article ($id)
 {
 
-      return DBQuery("
+      return DbQueryOne("
     SELECT * FROM news WHERE id='$id'
     ");
 }
+//var_dump(One_article(3));
