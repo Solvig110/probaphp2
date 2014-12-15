@@ -13,8 +13,8 @@
 
 
     <article>
-        <h1><?=$article['title']; var_dump($article)?></h1>
-        <div><?=$article['text'];?></div>
+        <h1><?=$art['title'];?></h1>
+        <div><?=$art['text'];?></div>
     </article>
 
 </body>

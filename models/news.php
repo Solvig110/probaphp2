@@ -22,4 +22,3 @@ function One_article ($id)
     SELECT * FROM news WHERE id='$id'
     ");
 }
-//var_dump(One_article(3));

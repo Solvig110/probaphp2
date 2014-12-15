@@ -1,15 +1,14 @@
 <?php
-//  не получается вывод одной статьи
 
- require_once __DIR__ . '/news.php';
-require_once __DIR__ .'/../view/article.php' ;
+ require __DIR__ . '/newsclass.php';
 
- $id=$_GET['id'];
-$article=One_article($id);
-//$id=3;
-//echo $article;
-if (false === $article);
-    echo 'error';
 
+$id=$_GET['id'];
+$viewarticle=new News();
+
+$art=$viewarticle->One_article($id);
+
+
+include __DIR__ .'/../view/article.php' ;
 
 
